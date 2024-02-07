@@ -47,9 +47,11 @@ The next step to fly to infinity and beyond is to start the gazebo simulation.
 ```sh
 cd src/PX4-Autopilot
 ```
+
 ```sh
 make px4_sitl_default gazebo-classic
 ```
+
 If everything is ok you should see a gazebo loading screen and after this ...
 
 And there was light -- 
@@ -57,6 +59,7 @@ And there was light --
 ![gazebo image](/img/Screenshot%20from%202024-02-05%2010-45-49.png)
 
 ### Usefull links
+
 - [PX4 Docker Containers | PX4 User Guide (main)](https://docs.px4.io/main/en/test_and_ci/docker.html)
 
 
