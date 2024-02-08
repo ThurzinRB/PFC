@@ -62,4 +62,8 @@ And there was light --
 
 - [PX4 Docker Containers | PX4 User Guide (main)](https://docs.px4.io/main/en/test_and_ci/docker.html)
 
+- [Building PX4 Software | PX4 User Guide (main)](https://docs.px4.io/main/en/dev_setup/building_px4.html)
+
+
+
 
