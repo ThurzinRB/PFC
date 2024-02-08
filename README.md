@@ -2,16 +2,52 @@
 
 Personal notes about my final course project, here I'll document everything i find usefull for writting the document
 
+
+
 ## How to install the docker conatainer
 
-// to do
+Hello my friend, if you're here, you're willing to start to fly. In this case I'll guide you through the path to download and install the gazebo simulation.
+First o f all, we need to install docker, if you don't know waht is this you can [click here](https://docs.docker.com/get-docker/) and read someone who knows better than me how to explain it. Run this 2 commands in your /home/user dir
+
+```bash
+curl -fsSL get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
+after you're done, you need to invoke docker as root user
+
+```bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+Now you need to create the shared directory that your docker container will access
+
+```bash
+mkdir src
+cd src
+```
+
+In this folder you will clone the PX4 repo with the tag --recursive
+
+```bash
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+```
+
+run this command, I don't know why
+
+```
+xhost +
+```
+
+Reboot your machine!
+
 
 ## Running
 
 To run the simulation you need to start the docker container using this command
 
 ```sh
-docker run -it --privileged \       
+docker run -it --privileged \
     --env=LOCAL_USER_ID="$(id -u)" \
     -v ~/src/PX4-Autopilot:/src/PX4-Autopilot/:rw \
     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
