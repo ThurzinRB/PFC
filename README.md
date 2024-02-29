@@ -97,8 +97,13 @@ And there was light --
 ### Usefull links
 
 - [PX4 Docker Containers | PX4 User Guide (main)](https://docs.px4.io/main/en/test_and_ci/docker.html)
-
 - [Building PX4 Software | PX4 User Guide (main)](https://docs.px4.io/main/en/dev_setup/building_px4.html)
+
+## Using a custom world
+
+The default world is boring and colorless. Our friend [Talles](https://github.com/TallesCarvalh0) made a world that we're going to use. Donwload the [file](https://github.com/TallesCarvalh0/DRONES/tree/main/worlds) and insert in this path:
+
+/home/<username>/src/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds
 
 
 
