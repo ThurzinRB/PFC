@@ -105,6 +105,25 @@ The default world is boring and colorless. Our friend [Talles](https://github.co
 
 /home/<username>/src/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds
 
+## Changing the vehicle
+
+In this project, we're going to simulate a lidar. Lucky for us, there is already a drone model configured with a rplidar. To run the simulation with it you just need to run
+
+```bash
+make px4_sitl gazebo_iris_rplidar
+```
+
+So now you should see this image
+
+![drone with rplidar](<img/Screenshot from 2024-03-14 20-15-30.png>)
+
+Now if you press ctrl + t, a screen will appear click in the gazebo/default/iris_rplidar/rpilidar/link/laser/scan. You're problably seeing a circle write now, if you place an object in the range of the lidar, the circle will change to the shape of your object!
+
+![alt text](<img/Screenshot from 2024-03-14 20-21-13.png>)
+
+
+
+
 
 
 
